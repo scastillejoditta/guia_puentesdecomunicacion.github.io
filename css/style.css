@@ -1,0 +1,558 @@
+
+/*selector universal para resetear las propiedades por defecto del sitio o del navegador*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Para fijar-mantener los valores de ancho y alto de una caja sin importar el padding y el margin*/
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Eliminar todos los subrayados */
+a {text-decoration: none;}
+
+/* Definir un interlineado específico */
+p {line-height: 1.5; margin-bottom: 10px;}
+
+/* Quitar las viñetas de todas las listas */
+ul {list-style-type: none;}
+
+body {background-color: #fff;}
+
+.apertura__imagen {
+    min-width:100%; 
+    position:relative; 
+    top:0;
+    left:0; 
+    margin:0; 
+    padding-top:44.4%;
+    border: none;
+   background-image: url("../assets/Encabezado-Puentes-v1.png");
+   background-size: cover;
+}
+
+#menu_fake {
+    background-image: url("../assets/menusolo.jpg");
+    background-size: cover;
+    min-width: 100%;
+    height: 100px;
+    margin-bottom: 50px;
+}
+/* -------------------------------------------- */
+/* ------------ PAGINA ------------------- */
+/* -------------------------------------------- */
+
+
+/* -------------------------------------------- */
+/* ------------ Bloque Introducción ------------------- */
+/* -------------------------------------------- */
+
+.autor, .cargo, .país  {
+    font-size: 0.8em;
+    color: #747BAD;
+}
+.cargo {font-style: italic; display: block; margin-bottom: 5px;}
+.país {font-weight: bold;}
+
+.descargar__guia
+{
+    display: block;
+    margin-top: 40px;
+}
+
+.descargar__guia img {
+    display: block;
+    width: 100px;
+    margin: 0;
+    padding: 0;
+}
+
+.descargar__guia small
+{margin: 5px 0;}
+
+.intro {
+    min-width:100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 40px 40px;
+    background-color: #fff;
+}
+
+.intro h1, .tertulias h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+.intro > div
+{
+    width: 45%;
+}
+
+.intro small {
+    color:#e34038;
+    font-weight: bold;
+}
+
+.descargar__guia small 
+{
+    color: #0041DB;
+}
+
+.acordion {
+    width: 100%;
+    margin-top: 400px;
+  }
+  
+.acordion__item 
+{
+    display: flex;
+    padding: 10px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .8s;
+}
+
+.acordion__item:hover {
+    transform: translateX(-100px);
+    background-color: #e34038;
+}
+.acordion__item:hover h2 {
+    color: #D6FD31;
+}
+.acordion__item:hover small, 
+.acordion__item:hover .cargo, 
+.acordion__item:hover .autor, 
+.acordion__item:hover .país
+{
+    color: #fff;
+}
+
+.acordion__item-imagen {
+    width: 600px;
+    background-size: cover;
+    margin-right: 15px;
+    background-position: center;
+}
+
+.centroamerica 
+{
+    background-image: url("../assets/png/ave_maleta.png");}
+.niniez 
+{
+    background-image: url("../assets/png/hojas_papel.png");}
+    .genero
+    {
+    background-image: url("../assets/png/gotas_paraguas.png");}
+
+.acordion__item-imagen h2 {
+    font-size: 2em; 
+    line-height: 100%;
+}
+
+/* -------------------------------------------- */
+/* ------------ Bloque Tertulias ------------------- */
+/* -------------------------------------------- */
+
+.tertulias {
+    padding: 40px 0;
+    min-width:100%;
+    background-color: #e34038;
+    position: relative;
+    z-index: 2;
+}
+
+.tertulias:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.1;
+    background-image: url("../assets/Mapa\ LATAM.svg");
+    background-repeat: no-repeat;
+    background-size: 130%;
+    background-position: top right;
+}
+
+.tertulias h3 {
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    font-weight: lighter;
+    font-size: 1.3em;
+}
+.tertulias small {
+    color: #fff;
+}
+
+.tertulias .autor, .tertulias .cargo, .tertulias .país {
+    color: #D6FD31;
+}
+
+.tertulias__descrip {
+    width: 50%;
+    margin: 40px auto;
+}
+
+.invitados {
+    width: 70%;
+    margin: 40px auto;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.invitados__item
+{
+    text-align: center;
+    width: 15em;
+    height: 23em;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 20%);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .8s;
+}
+
+.invitados__item:hover {
+    background-color:  rgba(214, 253, 49, 40%);
+    transform: translateY(-40px);
+}
+
+.invitados__item-imagen {
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: #D6FD31 solid 5px;
+    background-size: cover;
+    background-position: center;
+}
+
+.Ligia 
+{background-image: url("../assets/png/ligia.png");}
+.Tamara 
+{background-image: url("../assets/png/tamara.png");}
+.Diego
+{background-image: url("../assets/png/diego.png");}
+.Oscar 
+{background-image: url("../assets/png/oscar.png");}
+.Patricia 
+{background-image: url("../assets/png/patricia.png");}
+.Carolina
+{background-image: url("../assets/png/carolina.png");}
+
+.invitados__item > h2 {
+    font-size: 1.3em;
+}
+.invitados__item > p {
+    font-size: 0.9em;
+    text-align: justify;
+}
+
+/* -------------------------------------------- */
+/* ------------ Datos de resumen -------------- */
+/* -------------------------------------------- */
+
+.sverde 
+{ 
+    background-color: #D6FD31;
+    padding: 60px 0;
+    text-align: center;
+    min-height: 100vh;
+    position: relative;
+    z-index: 2;
+}
+
+.sverde:before {
+content: ' ';
+display: block;
+position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+z-index: -1;
+opacity: 0.1;
+background-image: url("../assets/png/hojas_papel.png");
+background-repeat: no-repeat;
+background-size: 100%;
+background-position: top right;
+}
+
+.sverde h2 {
+   font-size: 2.2em;
+   margin: 1.5em auto; 
+}
+.tres_datos {
+    margin: 60px auto;
+    display: flex;
+    gap: 80px;
+    justify-content: space-around;
+    max-width: 1200px;
+}
+
+.resumen_datos img {
+    width: 100%;
+}
+.resumen_datos p {
+    font-size: 0.8;
+    color: #747BAD;
+}
+
+.resumen_datos .dato {
+    color: #0041DB;
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 100%;
+
+}
+
+.sverde p span {
+    color: #0041DB;
+    font-weight: bold;
+}
+/* -------------------------------------------- */
+/* ------------ Bloque Chat ------------------- */
+/* -------------------------------------------- */
+
+.migranteschat
+{
+    margin-top: 10px;
+    min-width:100%;
+    background-color: #f0f2f5;    
+    display: grid;
+    grid-template-areas: 
+    ". encabezado ." 
+    ". contenido ."
+    ". pie .";
+    grid-template-columns: 20% auto 20%;
+}
+
+.migranteschat-encab
+{
+    background-color: #f0f2f5;
+    grid-area: encabezado;
+    padding: 5px 40px;
+    display: flex;    
+    justify-content: flex-start;
+    gap: 40px;
+    height: 60px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.migranteschat-encab img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: solid 1px #0041DB;
+}
+
+.migranteschat-encab p {margin-bottom: 0;}
+
+.migranteschat-encab p:nth-child(1)
+{
+    font-weight: bold; 
+    font-size: 1.3em;
+    color: #0041DB;
+}
+
+.migranteschat-encab p:nth-child(2)
+{
+    font-weight: lighter; 
+    font-size: 1em;
+    color: #54656f;
+}
+
+.migranteschat__chat
+{
+   grid-area: contenido;
+   background-image: url("../assets/png/Mapa-LATAM-fondo.jpg");
+   background-size:auto;
+   background-position: top;
+   background-repeat: repeat;
+   background-color: #efeae2;
+   margin: 5px 40px;
+   overflow-y: scroll;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   justify-content: space-between;
+   padding: 20px;
+}
+
+.migranteschat__noti {
+  background-color: #fff;
+  width: 75%;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 25px 25px -30px rgba(0, 0, 0, 60%);
+}
+
+.migranteschat__noti > span {
+    font-weight: lighter; 
+    font-size: 0.8em;
+    color: #54656f;
+    align-self: flex-end;
+}
+
+.migranteschat__noti p:nth-child(1) {
+    font-weight: bold;
+    margin: 0 0 5px 0;
+    font-size: 0.9em;
+}
+
+.miel {color: #d9b670;}
+.verde {color: #31af63;}
+.azul {color: #50a4fd;}
+.rosa {color: #e542a3;}
+
+.migranteschat__noti-msj > span {
+    color: #50a4fd;
+}
+
+.migranteschat__noti-link > img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.migranteschat__noti-link > small {
+    text-transform: uppercase;
+    margin-left: 5px; 
+    border-bottom: solid 1px #0041DB;
+    color: #0041DB;
+}
+
+.migranteschat__noti-link > span {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.4em;
+    padding-top: 5px;
+    margin: 5px 10px;
+    color: #000;
+}
+
+.migranteschat__noti-link:hover span {
+    color: #0041DB;}
+
+.migranteschat__noti-link:hover img 
+{
+        border: 10px solid #0041DB;
+    }
+
+.Logosfinal {
+    background-image: url("../assets/logos.jpg");
+    background-size: cover;
+    min-width: 100%;
+    height: 100px;
+}
+
+
+@media (max-width: 1200px)
+{
+        .intro
+        {
+            flex-direction: column;
+            justify-content: center;
+        }
+        .intro > div {width: 95%;}
+        .acordion {margin-top: 40px;}
+        .acordion__item:hover {
+            transform: translateY(-20px);
+        }
+
+}
+
+@media (max-width: 1000px)
+{
+        .migranteschat
+        {
+            grid-template-columns: 10% auto 10%;
+        }
+        .tres_datos{
+            flex-wrap: wrap;
+        }
+        .resumen_datos {width: 20em;}
+        .sverde::before {background-image: url("../assets/png/hojas_papel.png");
+            background-repeat:repeat-y;
+        background-size: 200%;}
+}
+
+@media (max-width:753px)
+{
+    .acordion__item 
+    {
+     flex-flow: column;   
+    }
+    .tertulias__descrip, .tertulias h3, .invitados {
+        width: 85%;
+    }
+    .invitados__item {
+        margin: 20px auto;
+    }
+}
+
+@media (max-width: 700px)
+{
+        .migranteschat
+        {
+            grid-template-columns:auto;
+            grid-template-areas: 
+            "encabezado" 
+            "contenido"
+            "pie";
+        }
+        .migranteschat__chat
+        { margin: 5px; }
+}
+
+@media (max-width: 485px)
+{
+    .migranteschat-encab
+    {
+        padding: 5px 20px;
+        gap: 10px;
+    }
+    
+    .migranteschat-encab p:nth-child(2)
+    {
+        font-size: 0.8em;   
+        line-height: 1.3; 
+    }
+
+    .migranteschat__noti
+    { width: 85%;}
+}
+
+@media (max-width: 300px)
+{
+    .migranteschat-encab
+    {
+        padding: 5px 20px;
+        gap: 10px;
+    }
+    
+    .migranteschat-encab p:nth-child(1)
+    {
+        font-size: 1.1em;   
+        line-height: 1.4; 
+    }
+
+    .migranteschat__noti
+    { width: 95%;}
+}
