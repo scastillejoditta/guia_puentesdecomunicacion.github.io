@@ -70,6 +70,7 @@ body {background-color: #fff;}
 {margin: 5px 0;}
 
 .intro {
+   margin-top:100px;
     min-width:100%;
     min-height: 100vh;
     display: flex;
@@ -135,13 +136,17 @@ body {background-color: #fff;}
     background-position: center;
 }
 
+.migrar
+    {
+    background-image: url("../assets/png/brujula_flor.png");}
+
 .centroamerica 
 {
     background-image: url("../assets/png/ave_maleta.png");}
 .niniez 
 {
     background-image: url("../assets/png/hojas_papel.png");}
-    .genero
+    .DDHH
     {
     background-image: url("../assets/png/gotas_paraguas.png");}
 
@@ -252,6 +257,14 @@ body {background-color: #fff;}
 {background-image: url("../assets/png/patricia.png");}
 .Carolina
 {background-image: url("../assets/png/carolina.png");}
+.Claudia
+{background-image: url("../assets/png/claudia.png");}
+.Liza 
+{background-image: url("../assets/png/liza.png");}
+.Lucila
+{background-image: url("../assets/png/lucila.png");}
+.Ginna
+{background-image: url("../assets/png/ginna.png");}
 
 .invitados__item > h2 {
     font-size: 1.3em;
